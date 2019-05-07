@@ -1,0 +1,121 @@
+.main
+	overflow hidden
+	&__in
+		padding-top 120px
+		+r($d)
+			padding-top 150px
+		+r($tL)
+			padding-bottom 20px
+		+r($m)
+			padding-top 110px
+	&__title
+		margin-bottom 80px
+		padding-right 280px
+		+r($d)
+			margin-bottom 102px
+			padding-right 160px
+		+r($tL)
+			margin-bottom 40px
+			padding-right 0
+		+r($m)
+			margin-right -5px
+			margin-bottom 40px
+		span
+			+r($d)
+				display block
+
+	&__button
+		margin-left auto
+		margin-bottom 80px
+		cursor pointer
+		white-space nowrap
+		+rmin($d)
+			order -1
+			margin-left 0
+		+r($d)
+			order 1
+			margin-left auto
+		+r($tL)
+			margin-bottom 40px
+			margin-left 0
+		+r($m)
+			position fixed
+			z-index 1
+			bottom 30px
+			right 30px
+			left 30px
+			text-align center
+
+	&__row
+		margin-bottom 190px
+		display flex
+		align-items flex-start
+		+rmin($dM)
+			flex-flow column
+		+r($d)
+			flex-flow row nowrap
+		+r($tL)
+			margin-bottom 0
+			flex-flow row wrap
+		+r($m)
+			margin-bottom 0
+	&__col-w
+		// max-width 752px
+		max-width 852px
+		width 100%
+		display flex
+		justify-content space-between
+		+r($tL)
+			max-width 100%
+			flex-flow row wrap
+			justify-content flex-start
+	&__col
+		margin-bottom 30px
+
+		+r($tL)
+			margin-bottom 30px
+			width 100%
+		+r($m)
+			margin-bottom 30px
+	&__text
+		color #b9cbf7
+		font-family $mL
+		font-size 26px
+		letter-spacing 0.7px
+		line-height 1.2
+		+r($m)
+			font-size 14px
+			letter-spacing 0.37px
+	&__col_cta
+		order -1
+		width 100%
+		text-align left
+
+		// +rmin($d)
+		// 	margin-left auto
+		// 	padding-left 50px
+		// 	padding-right 50px
+		// 	flex 1 1 100%
+
+		+rmin($dL)
+			order -1
+			width 100%
+
+		+r($d)
+			margin-left auto
+			padding-left 25px
+			padding-right 25px
+			order 1
+			width auto
+		+r($tL)
+			margin-left 0
+		+r($m)
+			position fixed
+			z-index 1
+			bottom 0
+			right 0
+			left 0
+			padding-left 30px
+			padding-right 30px
+			display block
+			text-align center
